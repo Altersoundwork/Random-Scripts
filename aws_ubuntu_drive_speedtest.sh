@@ -75,3 +75,11 @@ echo ${bold}
 echo "Commo nota final, podéis usar iotop o iostat en una terminal secundaria para ver el uso en tiempo real al correr estos tests"
 echo ${normal}
 ###################################################################################################################################
+#
+#
+#
+#
+# si has llegado aquí por el tweet de Érica Aguado, que sepas que nano mola más.
+#
+#
+# >;)
