@@ -1,0 +1,30 @@
+#!/bin/sh
+# Custom MOTD
+clear
+# Print header
+[ -r /etc/lsb-release ] && . /etc/lsb-release
+
+if [ -z "$DISTRIB_DESCRIPTION" ] && [ -x /usr/bin/lsb_release ]; then
+        # Fall back to using the very slow lsb_release utility
+        DISTRIB_DESCRIPTION=$(lsb_release -s -d)
+fi
+
+printf "Welcome to %s (%s %s %s)\n" "$DISTRIB_DESCRIPTION" "$(uname -o)" "$(uname -r)" "$(uname -m)"
+
+# Print Neofetch output
+neofetch
+
+# Print SysInfo
+cores=$(grep -c ^processor /proc/cpuinfo 2>/dev/null)
+[ "$cores" -eq "0" ] && cores=1
+threshold="${cores:-1}.0"
+if [ $(echo "`cut -f1 -d ' ' /proc/loadavg` < $threshold" | bc) -eq 1 ]; then
+    echo
+    echo -n "  System information as of "
+    /bin/date
+    echo
+    /usr/bin/landscape-sysinfo
+else
+    echo
+    echo " System information disabled due to load higher than $threshold"
+fi
