@@ -1,7 +1,12 @@
+#!/bin/bash
+
+# date: 18/03/2021
+# dev: @Altersoundwork
+
 clear
 sudo apt install sysstat sysbench hdparm iotop fio ioping -y
-mkdir /home/ubuntu/benchmark
-cd /home/ubuntu/benchmark
+mkdir ~/benchmark
+cd ~/benchmark
 clear
 #################################
 echo ${bold}
