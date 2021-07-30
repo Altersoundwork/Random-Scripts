@@ -13,9 +13,17 @@ A MOTD replacement file (you'll need to remove ALL other files under /etc/update
 
 Paste the contents of 00-soundwork-motd in to your file, save and exit. All done, go ahead, try to ssh user@localhost :)
 
-<h2>aws_ubuntu_drive_speedtest.sh</h2>
+<h2>ec2_storage_speed_test.sh</h2>
 
+A selection of different types of storage speed tests geared to deciding between GP2 & GP3 on AWS EC2 based on your needs.
 
+This script will install and test with the following.
+- sysstat
+- sysbench
+- hdparm
+- iotop
+- fio
+- ioping
 
 <h2>mint_themes_ubuntu.sh</h2>
 
