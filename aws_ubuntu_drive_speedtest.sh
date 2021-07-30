@@ -1,6 +1,8 @@
 #!/bin/bash
 #
 # A selection of different types of storage speed tests geared to deciding between GP2 & GP3 on AWS EC2 based on your needs.
+# Meant to be ran in an Ubuntu server instance.
+#
 # v0.3 - 30-07-2021
 # dev: @Altersoundwork
 #
