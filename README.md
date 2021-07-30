@@ -27,10 +27,12 @@ This script will install and test with the following.
 
 <h2>mint_themes_ubuntu.sh</h2>
 
-
+Downloads and Installs the X and Y themes from Mint on Ubuntu (regardless of Desktop choice). Should work for all Ubuntu versions 18.04 onwards.
 
 <h2>realtek_rtl8812bu.sh</h2>
 
+If your laptop has a Realtek RTL8812BU wifi chip, then you'll know these can be a real pain to install. This little script will install and configure the chip correctly on Linux Mint.
 
+I don't see why this wouldn't work on any debian based OS aside from Mint but I haven't tested outside of Mint.
 
 <h2>x11vnc_setup.sh</h2>
