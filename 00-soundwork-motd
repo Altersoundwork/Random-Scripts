@@ -1,5 +1,9 @@
-#!/bin/sh
-# Custom MOTD
+#!/bin/bash
+#
+# Custom MOTD.
+# v0.4 - 31-07-2021
+# dev: @Altersoundwork
+#
 clear
 # Print header
 [ -r /etc/lsb-release ] && . /etc/lsb-release
