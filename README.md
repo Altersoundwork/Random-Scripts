@@ -25,6 +25,10 @@ This script will install and test with the following.
 - fio
 - ioping
 
+<h2>image_or_sort.sh</h2>
+
+Simple script that will create 2 folders in the location where it's ran (Vertical & Horizontal) and proceed so sort images in the folder the script is located by their orientation.
+
 <h2>mint_themes_ubuntu.sh</h2>
 
 Downloads and Installs the X and Y themes from Mint on Ubuntu (regardless of Desktop choice). Should work for all Ubuntu versions 18.04 onwards.
